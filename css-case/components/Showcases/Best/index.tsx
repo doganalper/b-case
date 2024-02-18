@@ -5,7 +5,7 @@ export function ShowcaseBest() {
   return (
     <section className="best-showcase__container">
       <div className="best-showcase__header">
-        <h2 className="best-showcase__header-title section__header-mobile">The best of the best</h2>
+        <h2 className="best-showcase__header-title section__header">The best of the best</h2>
         <SignupButton variant="white" size="xl" />
       </div>
       <div className="best-showcase__section">

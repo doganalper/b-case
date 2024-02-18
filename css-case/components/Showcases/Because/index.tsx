@@ -3,7 +3,7 @@ import { BecauseSlideItem } from "@/components/Showcases/Because/because-slide-i
 export function ShowcaseBecause() {
   return (
     <section className="because__section">
-      <h5 className="because__header section__header-mobile">
+      <h5 className="because__header section__header">
         Because they love us
       </h5>
       <div className="because__slider-bg">

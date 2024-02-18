@@ -10,7 +10,7 @@ export function ShowcaseGrow() {
   const [active, setActive] = React.useState(0);
   return (
     <section className="grow__section">
-      <h5 className="section__header-mobile">Grow your collection</h5>
+      <h5 className="section__header">Grow your collection</h5>
       <p className="grow__section-content">
         Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh amet
         dictum pellentesque sed. Eu non turpis risus odio sapien, fames sit
