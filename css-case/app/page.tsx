@@ -13,7 +13,7 @@ export default function Home() {
       <ShowcaseJoinUs />
       <ShowcaseBecause />
       <ShowcaseGrow />
-      <ShowcaseShoes />
+      {/* <ShowcaseShoes /> */}
     </>
   );
 }

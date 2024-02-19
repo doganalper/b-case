@@ -1,23 +1,28 @@
+import { PlayIcon } from "@/components/icons/play";
+import { ArrowRight } from "@/components/icons/arrow-right";
 import { cn } from "@/utils/cn";
 
 type Props = {
-  icon: React.ComponentType;
   text: string;
   active: boolean;
   onClick: () => void;
 };
-export function GrowSlideItem({ icon, text, active, onClick }: Props) {
-  const Icon = icon;
+export function GrowSlideItem({ text, active, onClick }: Props) {
   return (
     <div
       onClick={onClick}
       className={cn(
-        "grow__section-slide",
+        "grow__section-slide fill-slate-900",
         active && "grow__section-slide__active",
       )}
     >
-      <Icon />
+      <PlayIcon inheritFill />
       <span>{text}</span>
+      {active && (
+        <div className="hidden lg:block">
+          <ArrowRight />
+        </div>
+      )}
     </div>
   );
 }
