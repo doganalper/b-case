@@ -33,6 +33,8 @@ export function Footer() {
       <div>
         <FooterApp />
         <FooterFollow />
+      </div>
+      <div className="col-span-full">
         <FooterTestimonials />
       </div>
     </footer>

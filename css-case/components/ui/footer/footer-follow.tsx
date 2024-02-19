@@ -9,7 +9,7 @@ export function FooterFollow() {
   return (
     <FooterColumn
       title="Follow Us"
-      className="py-12 space-y-2 border-b border-b-slate-700"
+      className="pt-12 space-y-2"
     >
       <div className="footer__follow-socials">
         <YoutubeIcon />

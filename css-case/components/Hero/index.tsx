@@ -2,8 +2,6 @@ import { HeroButtons } from "@/components/Hero/hero-buttons";
 import { HeroImage } from "@/components/Hero/hero-image";
 import { HeroColumns } from "@/components/Hero/hero-columns";
 
-// original: -right-[1800px] top-[320px] -rotate-[25.5deg] bg-amber-100 min-w-[4000px] h-[1000px] z-[-20]
-
 export function Hero() {
   return (
     <section className="hero">
@@ -20,6 +18,7 @@ export function Hero() {
         <HeroImage />
       </div>
       <HeroColumns />
+      <div className="hero__diagonal"></div>
     </section>
   );
 }

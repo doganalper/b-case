@@ -8,20 +8,8 @@ export function ShowcaseBecause() {
   const slider = React.useRef<HTMLDivElement>(null);
   function scrollSlider(direction: "left" | "right") {
     if (!slider.current) return;
-    console.log("[AA]");
 
-    /*
-    if (direction === "left") {
-      slider.current.scrollLeft -= 50;
-    }
-
-    if (direction === "right") {
-      slider.current.scrollLeft += 50;
-    }
-*/
-
-    let scrollAmount = direction === "left" ? -200 : 200;
-
+    let scrollAmount = direction === "left" ? -240 : 240;
     slider.current.scrollTo({
       left: slider.current.scrollLeft + scrollAmount,
       behavior: "smooth",
