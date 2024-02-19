@@ -258,7 +258,7 @@
   /* GROW SECTION*/
   .grow__section {
     @apply pb-12 pt-24 space-y-8 relative;
-    @apply md:p-20;
+    @apply md:p-20 md:pt-32;
   }
 
   .grow__section-content {
