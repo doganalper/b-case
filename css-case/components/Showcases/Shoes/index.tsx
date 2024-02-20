@@ -1,33 +1,24 @@
 import Image from "next/image";
+import { ShoesTooltip } from "@/components/Showcases/Shoes/shoes-tooltip";
 
 export function ShowcaseShoes() {
   return (
     <section className="shoes__section">
-      <div className="shoes__section-image-container">
+      <div className="shoes__section-earth-container">
+        <ShoesTooltip className="shoes__section-tooltip-small" />
         <Image
-          src="/shoe-collected.png"
-          width={266}
-          height={200}
+          src="/earth.png"
+          className="shoes__section-earth"
           alt=""
-          className="shoes__section-image"
+          height={633}
+          width={1049}
         />
-        <div className="shoes__section-image-tooltip">
-          Emma Simpson collected one pair of <span>Cool Shoes.</span>
-          <div className="shoes__section-image-tooltip-arrow"></div>
-          <div className="shoes__section-image-tooltip-arrow__circle"></div>
-        </div>
       </div>
+      <ShoesTooltip className="shoes__section-tooltip-large" />
       <div className="shoes__section-content">
         <span className="shoes__section-content-count">11,658,467</span>
         <span className="shoes__section-content-text">Shoes Collected</span>
       </div>
-      <Image
-        src="/earth.png"
-        className="max-w-full h-auto absolute left-[21px] md:left-auto"
-        alt=""
-        height={633}
-        width={1049}
-      />
     </section>
   );
 }

@@ -214,7 +214,8 @@
   }
 
   .because__header {
-    @apply md:px-20 flex items-center justify-between;
+    @apply flex items-center justify-center;
+    @apply md:px-20 md:justify-between;
   }
 
   .because__header-buttons {
@@ -284,17 +285,36 @@
   }
 
   .grow__section-slide {
-    @apply flex items-center space-x-4 text-xl font-medium tracking-loose text-slate-900 p-4 min-w-[240px] snap-center;
+    @apply flex items-center space-x-4 text-xl font-medium tracking-loose text-slate-900 p-4 min-w-[240px] snap-center bg-white/75 rounded-lg;
   }
 
   .grow__section-slide__active {
-    @apply shadow-[0_0_4px_0_rgba(0,0,0,0.07),0_4px_6px_-1px_rgba(0,0,0,0.1)] rounded-lg;
+    @apply shadow-[0_0_4px_0_rgba(0,0,0,0.07),0_4px_6px_-1px_rgba(0,0,0,0.1)];
   }
 
   /* SHOES SECTION */
   .shoes__section {
-    @apply bg-amber-900 pt-1 flex flex-col items-center pb-12 relative;
-    @apply md:justify-center md:py-[42px] md:min-h-[633px];
+    @apply bg-amber-900 lg:py-[42px] min-h-[717px] flex flex-col items-center justify-center;
+  }
+
+  .shoes__section-earth-container {
+    @apply absolute right-0 w-max overflow-x-hidden;
+    @apply lg:right-auto;
+  }
+
+  .shoes__section-tooltip-small {
+    @apply absolute left-5 top-0 hidden;
+    @apply lg:flex;
+  }
+
+  .shoes__section-earth {
+    @apply translate-x-1/2;
+    @apply md:translate-x-0;
+  }
+
+  .shoes__section-tooltip-large {
+    @apply flex;
+    @apply lg:hidden;
   }
 
   .shoes__section-image {
@@ -302,7 +322,7 @@
   }
 
   .shoes__section-image-container {
-    @apply flex flex-col items-center z-10;
+    @apply flex-col items-center z-10;
   }
 
   .shoes__section-image-tooltip {
@@ -325,17 +345,22 @@
 
   .shoes__section-content {
     @apply flex flex-col items-center text-white space-x-2 z-10;
-    @apply md:space-y-2;
+    @apply lg:space-y-2;
   }
 
   .shoes__section-content-count {
     @apply font-extrabold text-5xl leading-[52.8px];
-    @apply md:text-[96px] md:leading-[105.6px];
+    @apply lg:text-[96px] lg:leading-[105.6px];
   }
 
   .shoes__section-content-text {
     @apply font-bold text-mobile-section-title leading-[35.2px];
-    @apply md:font-extrabold md:text-6xl md:leading-[61.6px];
+    @apply lg:font-extrabold lg:text-6xl lg:leading-[61.6px];
+  }
+
+  .shoes__section--earth {
+    @apply max-w-full h-auto absolute;
+    @apply md:left-auto;
   }
 
   /* FOOTER */
